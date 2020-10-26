@@ -18,6 +18,12 @@ func prohodStringy(xStr, yStr string) (string, string) {
 	return yStr, xStr
 }
 
+func pridejPico(pico string) (x string) {
+	pico = "pico"
+	x = " " + pico
+	return
+}
+
 func main() {
 	ahoj := "Ahoj"
 	svete := "svete"
@@ -26,13 +32,13 @@ func main() {
 	random := rand.Intn(50)
 	fmt.Printf("Cislo %d zije!\n", random)
 
-	fmt.Printf("Now you have %g problems.\n", math.Sqrt(20))
+	fmt.Printf("Now you have %g problems.\n", math.Sqrt(144))
 
 	pi := math.Pi
 	fmt.Printf("Delka obvodu kruhu o r = 1 je: %g\n", pi)
 
-	xNr := 83275.547952374
-	yNr := 547402.503
+	xNr := 20.0
+	yNr := 20.0
 	fmt.Printf("%g krat %g je %f\n", xNr, yNr, multi(xNr, yNr))
 
 	var x float64 = 2
@@ -41,4 +47,7 @@ func main() {
 
 	ahoj, svete = prohodStringy(ahoj, svete)
 	fmt.Printf("%s %s!\n", ahoj, svete)
+
+	banik := "Banik"
+	fmt.Printf("%s  !!!\n", pridejPico(banik))
 }
