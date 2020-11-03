@@ -19,7 +19,7 @@ func prohodStringy(xStr, yStr string) (string, string) {
 }
 
 func pridejPico(pico string) (x string) {
-	pico = "pico"
+	pico = "pico banik"
 	x = " " + pico
 	return
 }
